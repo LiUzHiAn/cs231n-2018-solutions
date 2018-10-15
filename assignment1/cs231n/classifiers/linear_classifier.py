@@ -5,6 +5,7 @@ from cs231n.classifiers.linear_svm import *
 from cs231n.classifiers.softmax import *
 
 
+
 class LinearClassifier(object):
 
 	def __init__(self):
@@ -52,7 +53,10 @@ class LinearClassifier(object):
 			# Hint: Use np.random.choice to generate indices. Sampling with         #
 			# replacement is faster than sampling without replacement.              #
 			#########################################################################
-			pass
+			# 第一个参数是前多少个数据（会生成一个range对象），第二个参数是选多少个
+			batch_indices = np.random.choice(num_train, batch_size)
+			X_batch = X[batch_indices]
+			y_batch = y[batch_indices]
 			#########################################################################
 			#                       END OF YOUR CODE                                #
 			#########################################################################
@@ -66,7 +70,8 @@ class LinearClassifier(object):
 			# TODO:                                                                 #
 			# Update the weights using the gradient and the learning rate.          #
 			#########################################################################
-			pass
+			# 根据梯度反向迭代W
+			self.W -= learning_rate * grad
 			#########################################################################
 			#                       END OF YOUR CODE                                #
 			#########################################################################
@@ -95,7 +100,8 @@ class LinearClassifier(object):
 		# TODO:                                                                   #
 		# Implement this method. Store the predicted labels in y_pred.            #
 		###########################################################################
-		pass
+		scores = np.dot(X, self.W)
+		y_pred = np.argmax(scores, axis=1)
 		###########################################################################
 		#                           END OF YOUR CODE                              #
 		###########################################################################
