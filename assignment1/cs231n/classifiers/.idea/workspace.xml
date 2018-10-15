@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8433c1fe-f3bc-403f-9449-4fb178de7b08" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.ipynb_checkpoints/svm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../.ipynb_checkpoints/svm-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_svm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../knn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../knn.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../svm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../svm.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softmax.py" beforeDir="false" afterPath="$PROJECT_DIR$/softmax.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,32 +23,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1136" />
+          <entry key="py" value="1855" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1136" />
+          <entry key="Python" value="1855" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linear_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="-392">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -63,11 +57,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/softmax.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linear_svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+            <state relative-caret-position="-1288">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -114,12 +120,13 @@
         <option value="$PROJECT_DIR$/linear_svm.py" />
         <option value="$PROJECT_DIR$/linear_svm1.py" />
         <option value="$PROJECT_DIR$/linear_classifier.py" />
+        <option value="$PROJECT_DIR$/softmax.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="337" />
-    <option name="y" value="45" />
+    <option name="x" value="702" />
+    <option name="y" value="27" />
     <option name="width" value="1605" />
     <option name="height" value="1015" />
   </component>
@@ -172,7 +179,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="270" y="36" width="1284" height="812" extended-state="0" />
+    <frame x="562" y="22" width="1284" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13866232" />
@@ -219,16 +226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linear_svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/linear_svm1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1891">
@@ -236,12 +233,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/linear_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1288">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/linear_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="-392">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
