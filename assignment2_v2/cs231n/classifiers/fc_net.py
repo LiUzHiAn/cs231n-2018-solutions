@@ -180,6 +180,8 @@ class FullyConnectedNet(object):
 		self.dtype = dtype
 		self.params = {}
 
+		self.input_dim = input_dim
+
 		############################################################################
 		# TODO: Initialize the parameters of the network, storing all values in    #
 		# the self.params dictionary. Store weights and biases for the first layer #
@@ -193,11 +195,17 @@ class FullyConnectedNet(object):
 		# parameters should be initialized to zeros.                               #
 		############################################################################
 		all_layers_dims = [input_dim] + hidden_dims + [num_classes]
-		for i in range(self.num_layers):
-			self.params["W{}".format(i + 1)] = np.random.randn(all_layers_dims[i],
-															   all_layers_dims[i + 1]) * weight_scale
-			self.params["b{}".format(i + 1)] = np.zeros(all_layers_dims[i + 1])
+		print(all_layers_dims)
+		for i in range(1, self.num_layers + 1):
+			self.params["W{}".format(i)] = np.random.randn(all_layers_dims[i - 1],
+														   all_layers_dims[i]) * weight_scale
+			self.params["b{}".format(i)] = np.zeros(all_layers_dims[i])
 
+		# 如果采用BN
+		if self.normalization == "batchnorm":
+			for i in range(1, self.num_layers):
+				self.params["gamma{}".format(i)] = np.ones(all_layers_dims[i])
+				self.params["beta{}".format(i)] = np.zeros(all_layers_dims[i])
 		############################################################################
 		#                             END OF YOUR CODE                             #
 		############################################################################
@@ -232,7 +240,10 @@ class FullyConnectedNet(object):
 
 		Input / output: Same as TwoLayerNet above.
 		"""
+		# print("当前X的shape是", X.shape)
 		X = X.astype(self.dtype)
+		# !!!!!一定记住，loss()函数的输入X是(N,d1,d2...)形式的，一定要先转成(N,D)格式!!!!!
+		X = np.reshape(X, newshape=(X.shape[0], self.input_dim))
 		mode = 'test' if y is None else 'train'
 
 		# Set train/test mode for batchnorm params and dropout param since they
@@ -255,22 +266,42 @@ class FullyConnectedNet(object):
 		# self.bn_params[1] to the forward pass for the second batch normalization #
 		# layer, etc.                                                              #
 		############################################################################
-		h = {}
 		cache_linear = {}
 		cache_relu = {}
-		cache_composed = {}
-		out = {}
-		out[0] = X
+		cache_BN = {}
+		BN_out = {}
+		linear_out = {}
+		relu_out = {}
+
+		# 这里只是为了循环里面方便而设置relu_out[0]，其实没有意义。
+		# 我们只从第一层开始运用BN，Linear，Non-linear
+		relu_out[0] = X
+
 		# 最后一层不用relu，而是softmax，所以在num_layser-1上循环
-		for i in range(1, self.num_layers + 1):
+		for i in range(1, self.num_layers):
+			# print(i)
+
 			W = self.params["W{}".format(i)]
 			b = self.params["b{}".format(i)]
-			# 运用线性层和relu层结合的接口
-			(out[i], cache_composed[i]) = affine_relu_forward(out[i - 1], W, b)
+
+			# 先线性层
+			(linear_out[i], cache_linear[i]) = affine_forward(relu_out[i - 1], W, b)
+			# 如果采用BN
+			if self.normalization == "batchnorm":
+				gamma = self.params["gamma{}".format(i)]
+				beta = self.params["beta{}".format(i)]
+				# Batch Normalization
+				(BN_out[i], cache_BN[i]) = batchnorm_forward(linear_out[i], gamma, beta, self.bn_params[i - 1])
+			# 不用BN
+			else:
+				BN_out[i] = linear_out[i]
+			# 最后non-linear层
+			(relu_out[i], cache_relu[i]) = relu_forward(BN_out[i])
 		# 最后一层用softmax
 		W = self.params["W{}".format(self.num_layers)]
 		b = self.params["b{}".format(self.num_layers)]
-		(scores, cache_last) = affine_forward(out[self.num_layers - 1], W, b)
+		(scores, cache_last) = affine_forward(relu_out[self.num_layers - 1], W, b)
+
 		############################################################################
 		#                             END OF YOUR CODE                             #
 		############################################################################
@@ -301,17 +332,31 @@ class FullyConnectedNet(object):
 		# print(loss)
 
 		"""----------------------反向传播-------------------------"""
-		dout = {}
+		dout_BN = {}
+		dout_linear = {}
+		dout_relu = {}
+
 		# 最后一层的BP略有不同
-		(dout[self.num_layers - 1], grads["W{}".format(self.num_layers)],
+		(dout_relu[self.num_layers - 1], grads["W{}".format(self.num_layers)],
 		 grads["b{}".format(self.num_layers)]) = affine_backward(
 			dscores, cache_last)
 
-		# print()
 		# 除最后一层外的BP
 		for i in range(self.num_layers - 1, 0, -1):
-			(dout[i - 1], grads["W{}".format(i)], grads["b{}".format(i)]) = affine_relu_backward(dout[i],
-																								 cache_composed[i])
+			# 先relu层的BP
+			dout_BN[i] = relu_backward(dout_relu[i], cache_relu[i])
+			# 如果用了BN
+			if self.normalization == "batchnorm":
+				# BN层的BP
+				(dout_linear[i], grads["gamma{}".format(i)], grads["beta{}".format(i)]) = batchnorm_backward_alt(
+					dout_BN[i], cache_BN[i])
+			# 没用BN
+			else:
+				dout_linear[i] = dout_BN[i]
+			# 最后Linear层的BP
+			(dout_relu[i - 1], grads["W{}".format(i)], grads["b{}".format(i)]) = affine_backward(dout_linear[i],
+																								 cache_linear[i])
+
 		# 一定别忘了加上正则项那部分产生的dL/dW
 		for i in range(1, self.num_layers + 1):
 			grads["W{}".format(i)] += self.reg * self.params["W{}".format(i)]
