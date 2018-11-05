@@ -272,6 +272,7 @@ class FullyConnectedNet(object):
 		BN_out = {}
 		linear_out = {}
 		relu_out = {}
+		dropout_cache = {}
 
 		# 这里只是为了循环里面方便而设置relu_out[0]，其实没有意义。
 		# 我们只从第一层开始运用BN，Linear，Non-linear
@@ -297,6 +298,9 @@ class FullyConnectedNet(object):
 				BN_out[i] = linear_out[i]
 			# 最后non-linear层
 			(relu_out[i], cache_relu[i]) = relu_forward(BN_out[i])
+			# 如果使用dropout
+			if self.use_dropout:
+				relu_out[i], dropout_cache[i] = dropout_forward(relu_out[i], self.dropout_param)
 		# 最后一层用softmax
 		W = self.params["W{}".format(self.num_layers)]
 		b = self.params["b{}".format(self.num_layers)]
@@ -343,6 +347,8 @@ class FullyConnectedNet(object):
 
 		# 除最后一层外的BP
 		for i in range(self.num_layers - 1, 0, -1):
+			if self.use_dropout:
+				dout_relu[i] = dropout_backward(dout_relu[i], dropout_cache[i])
 			# 先relu层的BP
 			dout_BN[i] = relu_backward(dout_relu[i], cache_relu[i])
 			# 如果用了BN
@@ -356,7 +362,6 @@ class FullyConnectedNet(object):
 			# 最后Linear层的BP
 			(dout_relu[i - 1], grads["W{}".format(i)], grads["b{}".format(i)]) = affine_backward(dout_linear[i],
 																								 cache_linear[i])
-
 		# 一定别忘了加上正则项那部分产生的dL/dW
 		for i in range(1, self.num_layers + 1):
 			grads["W{}".format(i)] += self.reg * self.params["W{}".format(i)]

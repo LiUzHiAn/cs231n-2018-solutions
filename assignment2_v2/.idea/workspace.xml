@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f894d7-901e-4bf1-b0fb-23bcdc447e9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchNormalization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/BatchNormalization.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FullyConnectedNets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FullyConnectedNets.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dropout.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Dropout.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/solver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,23 +42,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4544" />
+          <entry key="py" value="4769" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4544" />
+          <entry key="Python" value="4769" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3018">
-              <caret line="348" column="49" lean-forward="true" selection-start-line="348" selection-start-column="49" selection-end-line="348" selection-end-column="49" />
+            <state relative-caret-position="487">
+              <caret line="363" column="113" selection-start-line="363" selection-start-column="113" selection-end-line="363" selection-end-column="113" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#166#5644#0" />
@@ -71,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2572">
-              <caret line="452" column="46" selection-start-line="452" selection-start-column="46" selection-end-line="452" selection-end-column="46" />
+            <state relative-caret-position="378">
+              <caret line="575" column="24" selection-start-line="575" selection-start-column="24" selection-end-line="575" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#78#1356#0" />
@@ -86,8 +82,15 @@
                 <element signature="e#9798#11768#0" />
                 <element signature="e#9798#10351#1" />
                 <element signature="e#11813#13251#0" />
+                <element signature="e#13304#15114#0" />
+                <element signature="e#15155#16490#0" />
                 <element signature="e#16533#18850#0" />
-                <element signature="e#18889#19641#0" />
+                <element signature="e#16533#17597#1" />
+                <element signature="e#19730#19801#0" />
+                <element signature="e#20085#20156#0" />
+                <element signature="e#20327#20398#0" />
+                <element signature="e#20562#20633#0" />
+                <element signature="e#18889#19056#1" />
                 <element signature="e#19690#21346#0" />
                 <element signature="e#21388#22219#0" />
                 <element signature="e#22266#23390#0" />
@@ -166,6 +169,7 @@
       <find>dgammax</find>
       <find>dout_relu</find>
       <find>dxhat</find>
+      <find>seed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,12 +183,12 @@
         <option value="$PROJECT_DIR$/cs231n/optim.py" />
         <option value="$PROJECT_DIR$/cs231n/classifiers/dict_test.py" />
         <option value="$PROJECT_DIR$/cs231n/solver.py" />
-        <option value="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" />
         <option value="$PROJECT_DIR$/cs231n/layers.py" />
+        <option value="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="342" />
     <option name="y" value="32" />
     <option name="width" value="1445" />
@@ -207,6 +211,12 @@
               <item name="assignment2_v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment2_v2" type="462c0819:PsiDirectoryNode" />
               <item name="cs231n" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment2_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="cs231n" type="462c0819:PsiDirectoryNode" />
+              <item name="classifiers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,10 +282,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="274" y="26" width="1156" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22404371" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16487935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -412,21 +422,10 @@
     <entry file="file://$PROJECT_DIR$/normalization.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3018">
-          <caret line="348" column="49" lean-forward="true" selection-start-line="348" selection-start-column="49" selection-end-line="348" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#166#5644#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2572">
-          <caret line="452" column="46" selection-start-line="452" selection-start-column="46" selection-end-line="452" selection-end-column="46" />
+        <state relative-caret-position="378">
+          <caret line="575" column="24" selection-start-line="575" selection-start-column="24" selection-end-line="575" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#78#1356#0" />
@@ -437,8 +436,15 @@
             <element signature="e#9798#11768#0" />
             <element signature="e#9798#10351#1" />
             <element signature="e#11813#13251#0" />
+            <element signature="e#13304#15114#0" />
+            <element signature="e#15155#16490#0" />
             <element signature="e#16533#18850#0" />
-            <element signature="e#18889#19641#0" />
+            <element signature="e#16533#17597#1" />
+            <element signature="e#19730#19801#0" />
+            <element signature="e#20085#20156#0" />
+            <element signature="e#20327#20398#0" />
+            <element signature="e#20562#20633#0" />
+            <element signature="e#18889#19056#1" />
             <element signature="e#19690#21346#0" />
             <element signature="e#21388#22219#0" />
             <element signature="e#22266#23390#0" />
@@ -449,6 +455,17 @@
             <element signature="e#28899#29897#0" />
             <element signature="e#29921#30678#0" />
             <element signature="e#30706#31393#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="363" column="113" selection-start-line="363" selection-start-column="113" selection-end-line="363" selection-end-column="113" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#166#5644#0" />
           </folding>
         </state>
       </provider>
