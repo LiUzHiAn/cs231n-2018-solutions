@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f894d7-901e-4bf1-b0fb-23bcdc447e9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Dropout.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Dropout.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConvolutionalNetworks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ConvolutionalNetworks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/fast_layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/fast_layers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/layers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,116 +18,107 @@
     <session id="578861584">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="c" value="1" />
           <entry key="ipynb" value="1" />
-          <entry key="jpg" value="2" />
-          <entry key="png" value="2" />
-          <entry key="py" value="14" />
+          <entry key="jpg" value="4" />
+          <entry key="png" value="3" />
+          <entry key="py" value="19" />
+          <entry key="pyx" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="C++" value="1" />
           <entry key="IPNB" value="1" />
-          <entry key="Image" value="4" />
-          <entry key="Python" value="14" />
+          <entry key="Image" value="7" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4769" />
+          <entry key="py" value="6877" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4769" />
+          <entry key="Python" value="6877" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="363" column="113" selection-start-line="363" selection-start-column="113" selection-end-line="363" selection-end-column="113" />
+            <state relative-caret-position="-142">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#166#5644#0" />
+                <element signature="e#861#2278#0" />
+                <element signature="e#5681#16244#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="575" column="24" selection-start-line="575" selection-start-column="24" selection-end-line="575" selection-end-column="24" />
+            <state relative-caret-position="-463">
+              <caret line="775" selection-start-line="775" selection-end-line="775" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#78#1356#0" />
                 <element signature="e#1394#2602#0" />
                 <element signature="e#2627#3346#0" />
                 <element signature="e#3382#4125#0" />
-                <element signature="e#4178#9757#0" />
-                <element signature="e#9798#11768#0" />
-                <element signature="e#9798#10351#1" />
-                <element signature="e#11813#13251#0" />
-                <element signature="e#13304#15114#0" />
-                <element signature="e#15155#16490#0" />
-                <element signature="e#16533#18850#0" />
-                <element signature="e#16533#17597#1" />
+                <element signature="e#4178#9659#0" />
+                <element signature="e#11716#13667#0" />
+                <element signature="e#13720#16282#0" />
+                <element signature="e#16323#18450#0" />
+                <element signature="e#18493#20882#0" />
                 <element signature="e#19730#19801#0" />
-                <element signature="e#20085#20156#0" />
-                <element signature="e#20327#20398#0" />
-                <element signature="e#20562#20633#0" />
-                <element signature="e#18889#19056#1" />
-                <element signature="e#19690#21346#0" />
-                <element signature="e#21388#22219#0" />
-                <element signature="e#22266#23390#0" />
-                <element signature="e#23436#24150#0" />
-                <element signature="e#24211#25888#0" />
-                <element signature="e#25937#27167#0" />
-                <element signature="e#27231#28850#0" />
-                <element signature="e#28899#29897#0" />
-                <element signature="e#29921#30678#0" />
-                <element signature="e#30706#31393#0" />
+                <element signature="e#20921#21692#0" />
+                <element signature="e#21741#24139#0" />
+                <element signature="e#24181#26240#0" />
+                <element signature="e#26287#27885#0" />
+                <element signature="e#27931#29333#0" />
+                <element signature="e#29394#31071#0" />
+                <element signature="e#31410#32767#0" />
+                <element signature="e#34082#35080#0" />
+                <element signature="e#35104#35861#0" />
+                <element signature="e#35889#36576#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs231n/solver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-                <element signature="e#7849#8642#0" />
-                <element signature="e#10002#12149#0" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/normalization.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs231n/im2col.py">
+        <entry file="file://$PROJECT_DIR$/cs231n/classifiers/cnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-177">
+            <state relative-caret-position="459">
+              <caret line="63" column="32" lean-forward="true" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,20 +127,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/layer_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1333">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="151">
+              <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
               <folding>
                 <element signature="e#5#32#0" expanded="true" />
+                <element signature="e#106#523#0" />
+                <element signature="e#569#779#0" />
+                <element signature="e#830#1305#0" />
+                <element signature="e#1349#1565#0" />
+                <element signature="e#1642#1875#0" />
+                <element signature="e#1922#2159#0" />
+                <element signature="e#2227#2830#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs231n/optim.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2968">
-              <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -170,6 +161,7 @@
       <find>dout_relu</find>
       <find>dxhat</find>
       <find>seed</find>
+      <find>col2im_6d_cython</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,14 +175,16 @@
         <option value="$PROJECT_DIR$/cs231n/optim.py" />
         <option value="$PROJECT_DIR$/cs231n/classifiers/dict_test.py" />
         <option value="$PROJECT_DIR$/cs231n/solver.py" />
-        <option value="$PROJECT_DIR$/cs231n/layers.py" />
         <option value="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" />
+        <option value="$PROJECT_DIR$/cs231n/fast_layers.py" />
+        <option value="$PROJECT_DIR$/cs231n/classifiers/cnn.py" />
+        <option value="$PROJECT_DIR$/cs231n/layers.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="342" />
-    <option name="y" value="32" />
+    <option name="x" value="150" />
+    <option name="y" value="107" />
     <option name="width" value="1445" />
     <option name="height" value="1040" />
   </component>
@@ -227,6 +221,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -283,9 +278,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16487935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -335,9 +329,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cs231n/fast_layers.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/gradient_check.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -352,10 +343,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/dict_test.py">
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/dict_test.py" />
+    <entry file="file://$PROJECT_DIR$/PyTorch.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/vis_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-65" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/solver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4984">
+          <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -366,55 +373,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/puppy.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/im2col_cython.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-889791" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/im2col_cython.pyx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="108" column="20" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/im2col.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
+    <entry file="file://$PROJECT_DIR$/cs231n/fast_layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/puppy.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/vis_utils.py">
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
+        <state relative-caret-position="-142">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#861#2278#0" />
+            <element signature="e#5681#16244#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layer_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1333">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="151">
+          <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
           <folding>
             <element signature="e#5#32#0" expanded="true" />
+            <element signature="e#106#523#0" />
+            <element signature="e#569#779#0" />
+            <element signature="e#830#1305#0" />
+            <element signature="e#1349#1565#0" />
+            <element signature="e#1642#1875#0" />
+            <element signature="e#1922#2159#0" />
+            <element signature="e#2227#2830#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/solver.py">
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/cnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
+        <state relative-caret-position="459">
+          <caret line="63" column="32" lean-forward="true" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="e#7849#8642#0" />
-            <element signature="e#10002#12149#0" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -424,48 +454,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="575" column="24" selection-start-line="575" selection-start-column="24" selection-end-line="575" selection-end-column="24" />
+        <state relative-caret-position="-463">
+          <caret line="775" selection-start-line="775" selection-end-line="775" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#78#1356#0" />
             <element signature="e#1394#2602#0" />
             <element signature="e#2627#3346#0" />
             <element signature="e#3382#4125#0" />
-            <element signature="e#4178#9757#0" />
-            <element signature="e#9798#11768#0" />
-            <element signature="e#9798#10351#1" />
-            <element signature="e#11813#13251#0" />
-            <element signature="e#13304#15114#0" />
-            <element signature="e#15155#16490#0" />
-            <element signature="e#16533#18850#0" />
-            <element signature="e#16533#17597#1" />
+            <element signature="e#4178#9659#0" />
+            <element signature="e#11716#13667#0" />
+            <element signature="e#13720#16282#0" />
+            <element signature="e#16323#18450#0" />
+            <element signature="e#18493#20882#0" />
             <element signature="e#19730#19801#0" />
-            <element signature="e#20085#20156#0" />
-            <element signature="e#20327#20398#0" />
-            <element signature="e#20562#20633#0" />
-            <element signature="e#18889#19056#1" />
-            <element signature="e#19690#21346#0" />
-            <element signature="e#21388#22219#0" />
-            <element signature="e#22266#23390#0" />
-            <element signature="e#23436#24150#0" />
-            <element signature="e#24211#25888#0" />
-            <element signature="e#25937#27167#0" />
-            <element signature="e#27231#28850#0" />
-            <element signature="e#28899#29897#0" />
-            <element signature="e#29921#30678#0" />
-            <element signature="e#30706#31393#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="363" column="113" selection-start-line="363" selection-start-column="113" selection-end-line="363" selection-end-column="113" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#166#5644#0" />
+            <element signature="e#20921#21692#0" />
+            <element signature="e#21741#24139#0" />
+            <element signature="e#24181#26240#0" />
+            <element signature="e#26287#27885#0" />
+            <element signature="e#27931#29333#0" />
+            <element signature="e#29394#31071#0" />
+            <element signature="e#31410#32767#0" />
+            <element signature="e#34082#35080#0" />
+            <element signature="e#35104#35861#0" />
+            <element signature="e#35889#36576#0" />
           </folding>
         </state>
       </provider>
