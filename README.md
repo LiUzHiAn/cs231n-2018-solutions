@@ -1,3 +1,7 @@
-# cs231n-2018-solutions
+## Overview
+This repository include my solutions to CS231n_2018 assinments. You can get all the resources and assignments code in CS231n homepage.
 
-# 个人学习所写，有中文注释
+Author: LiuZhian
+
+
+Continue to update...
