@@ -280,7 +280,7 @@ class CaptioningRNN(object):
 			elif self.cell_type == "lstm":
 				# for LSTM use
 				cur_cell = np.zeros_like(cur_h)
-				cur_h, h_cache = lstm_step_forward(out_word, cur_h, cur_cell, Wx, Wh, b)
+				cur_h, cur_cell, h_cache = lstm_step_forward(out_word, cur_h, cur_cell, Wx, Wh, b)
 			else:
 				raise ValueError('Invalid cell_type "%s" while running loss function' % self.cell_type)
 
